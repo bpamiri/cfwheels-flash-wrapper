@@ -2,7 +2,7 @@
 
 <cfscript>
 	flashWrapperMeta = {};
-	flashWrapperMeta.version = "0.1.1";
+	flashWrapperMeta.version = "0.1.2";
 	flashInsert(alert="flash(""alert"")");
 	flashInsert(error="flash(""error"")");
 	flashInsert(info="flash(""info"")");
@@ -21,13 +21,13 @@
 
 <h1>Flash Wrapper v#flashWrapperMeta.version#</h1>
 <p>
-	This plugin adds new parameters to <a href="http://cfwheels.org/docs/1-1/function/flash">flash()</a> and <a href="http://cfwheels.org/docs/1-1/function/flashmessages">flashMessages()</a> so their output can be wrapped with custom HTML.
+	This plugin adds new parameters to <a href="https://api.cfwheels.org/v2.0##controller.flash">flash()</a> and <a href="https://api.cfwheels.org/v2.0##controller.flashmessages">flashMessages()</a> so their output can be wrapped with custom HTML.
 </p>
 
 <h2>Usage/Examples</h2>
 <p>
 	<ul>
-		<li>Adds parameters <em>prepend</em> and <em>append</em> to <a href="http://cfwheels.org/docs/1-1/function/flash">flash()</a>. Here we can see <a href="http://cfwheels.org/docs/1-1/function/flash">flash()</a> surrounded by <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> styled markup.</li>
+		<li>Adds parameters <em>prepend</em> and <em>append</em> to <a href="https://api.cfwheels.org/v2.0##controller.flash">flash()</a>. Here we can see <a href="https://api.cfwheels.org/v2.0##controller.flash">flash()</a> surrounded by <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> styled markup.</li>
 		<li>If the flash key name is one of <em>error</em>, <em>info</em>, or <em>success</em>, and there is a class of <em>alert</em> existing in the <em>prepend</em> argument string, a <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> compatible class of either <em>alert-error</em>, <em>alert-info</em>, or <em>alert-success</em> will be added to the element according to the flash key name.</li>
 	</ul>
 	#flash(key="alert", prepend="<div class=""alert"">", append="</div>")#
@@ -37,7 +37,7 @@
 </p>
 <p>
 	<ul>
-		<li>Adds parameters <em>prependToValue</em> and <em>appendToValue</em> to <a href="http://cfwheels.org/docs/1-1/function/flashmessages">flashMessages()</a>. Here we can see each message in <a href="http://cfwheels.org/docs/1-1/function/flashmessages">flashMessages()</a> surrounded by <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> styled markup.</li>
+		<li>Adds parameters <em>prependToValue</em> and <em>appendToValue</em> to <a href="https://api.cfwheels.org/v2.0##controller.flashmessages">flashMessages()</a>. Here we can see each message in <a href="https://api.cfwheels.org/v2.0##controller.flashmessages">flashMessages()</a> surrounded by <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> styled markup.</li>
 		<li>If a flash key name is one of <em>error</em>, <em>info</em>, or <em>success</em>, and there is a class of <em>alert</em> existing in the <em>prependToValue</em> argument string, a <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> compatible class of either <em>alert-error</em>, <em>alert-info</em>, or <em>alert-success</em> will be added to the element according to the key name for each value in the flash.</li>
 	</ul>
 	#flashMessages(prependToValue="<div class=""alert"">", appendToValue="</div>")#
@@ -45,7 +45,7 @@
 
 <h2>Configuration</h2>
 <p>
-	Function default settings can be set from <tt>/config/settings.cfm</tt> or from any of the environment-specific settings files (e.g., <tt>/config/design/settings.cfm</tt>) using the <a href="http://cfwheels.org/docs/1-1/function/set">set()</a> function. Here we see an example using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> styled markup.
+	Function default settings can be set from <tt>/config/settings.cfm</tt> or from any of the environment-specific settings files (e.g., <tt>/config/design/settings.cfm</tt>) using the <a href="https://api.cfwheels.org/v2.0##controller.set">set()</a> function. Here we see an example using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> styled markup.
 </p>
 <pre>
 &lt;cfscript&gt;
